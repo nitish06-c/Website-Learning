@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="Untitled-1.css"> 
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class = "logo">
+                <img src="219-2197783_training-documents-google-logo-icon-png.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Buy</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <img src="timeless-logos.jpg" class="mobile">
+             <div id="circle">
+                <div class = "feature one"></div>
+                    <img src=>
+                    <h1>Title</h1>
+                    <p>blah blah blah</p>
+                <div class = "feature two"></div>
+                    <h1>Title</h1>
+                    <p>blah blah blah</p>
+                <div class = "feature three"></div>
+                    <h1>Title</h1>
+                    <p>blah blah blah</p>
+                <div class = "feature four"></div>
+             </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <img src="timeless-logos.jpg" id="upBtn">
+        <h3>Features</h3>
+        <img src="timeless-logos.jpg" id="dBtn">
+
+    </div>
+    
+    <script>
+        var circle = document.getElementByID("circle");
+        var upBtn = document.getElementByID("upBtn");
+        var dBtn = document.getElementByID("dBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;            
+        }
+    </script>
+</body>
+</html>
